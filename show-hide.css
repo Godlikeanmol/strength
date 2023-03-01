@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	display: grid;
+	place-items: center;
+	text-align: center;
+	height: 100vh;
+	background: url(https://picsum.photos/id/248/1000/600);
+	background-size: cover;
+
+}
+
+.cointainer{
+	padding: 10px;
+	background: transparent;
+	box-shadow: 1px 1px 10px black;
+	width: 400px;
+	backdrop-filter: blur(2px);
+}
+
+.cointainer header{
+	font-size: 28px;
+	font-weight: 600;
+	margin: 5px 0 10px;
+}
+
+form .field{
+	position: relative;
+/*	background: olivedrab;*/
+	padding: 10px;
+}
+
+#pass{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+#pass::placeholder{
+	color: black;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.showbtn {
+	display: none;
+	cursor: pointer;
+
+}
+
+
+.showbtn i{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+}
+
+
+
+.indicator{
+	display: flex;
+	width: 100%;
+/*	background: red;*/
+	padding: 10px;
+	margin: 10px 0;
+	justify-content: space-between;
+	display: none;
+}
+
+.indicator span{
+	width:100%;
+	padding: 5px;
+	border-radius: 10px;
+	background: grey;
+	position: relative;
+}
+
+
+.indicator .modrate{
+	margin: 0 3px;
+}
+
+form .indicator span.active::before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 10px;
+}
+
+
+
+.indicator span.weak::before{
+	background: red;
+}
+
+.indicator span.modrate::before{
+	background: orange;
+}
+
+.indicator span.strong::before{
+	background: green;
+}
+
+
+
+form .text
+{
+  font-size: 20px;
+  font-weight: 600;
+  display: none;
+  margin-bottom: -10px;
+}
+
+
+form .text.weak{
+  color: #ff4757;
+}
+form .text.modrate{
+  color: orange;
+}
+form .text.strong{
+  color: #23ad5c;
+}
+
+
